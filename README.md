@@ -3,7 +3,9 @@
 CS3001 Computer Networks research project, Phase 3: implementation and experimental evaluation.
 Group: Afaq Ahsan (24i-6516) · Qanitah Ali (24i-3125)
 
-> **Synthetic data notice:** all results come from a simulated dataset, not from real multiplayer traffic.
+> **Data:** the main experiments use a seeded simulated dataset (552,000 ticks). A second set of experiments
+> (`real_traces/`) validates the pipeline on 947,025 ticks of real cloud-gaming network telemetry
+> (RTT, jitter, loss, throughput); only the game-side context is simulated there.
 
 ## Contents
 
