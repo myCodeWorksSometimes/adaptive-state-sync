@@ -1,0 +1,23 @@
+latency_budget_ms: 50
+tick_rate_hz: 60
+ticks_per_session: 600
+rolling_window_size: 20
+rows_per_session: 575
+prediction_horizon_ticks: 5
+random_seed: 42
+paths:
+- LAN
+- Home_Broadband
+- Mobile_4G
+- CrossRegion_Cloud
+genres:
+- Shooter
+- Racing
+client_counts:
+- 4
+- 8
+- 16
+- 32
+repetitions: 30
+note: "SYNTHETIC DATASET \u2014 not real-world collected traffic. Total rows: 4x2x4x30x575\
+  \ = 552,000"

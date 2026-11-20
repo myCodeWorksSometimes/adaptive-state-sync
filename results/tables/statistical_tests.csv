@@ -1,0 +1,6 @@
+comparison,n_sessions,mean_diff,ci_95_lo,ci_95_hi,sw_p,normal,wilcoxon_p,sig_p005,sig_p001,cohens_d,effect_size
+ASS vs Base-A (Static Full),144,1.00769,0.74662,1.28486,0.0,False,1.3325704743350278e-18,True,True,0.601,Medium
+ASS vs Base-B (Fixed ALC),144,-0.18246,-0.41027,0.04897,0.0056,False,0.9858727620780451,False,False,-0.131,Small
+ASS vs Base-C (Pred-NoAct),144,0.23233,0.16562,0.30859,0.0,False,4.1236975732584177e-10,True,True,0.542,Medium
+ASS vs Base-D (Static Plc),144,0.50083,0.27144,0.7584,0.0,False,0.03210531817500335,True,False,0.336,Small
+ASS vs ASS-Reactive (no predictor),144,-0.11801,-0.21652,-0.02142,0.0,False,0.9997673746397316,False,False,-0.197,Small

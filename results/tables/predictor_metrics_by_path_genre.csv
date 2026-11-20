@@ -1,0 +1,9 @@
+path,genre,n_rows,rtt_mae_ms,rtt_rmse_ms,bw_mae_mbps,sev_accuracy,sev_f1_macro
+LAN,Shooter,12650,20.65,34.29,9.88,0.857,0.231
+LAN,Racing,10925,19.88,32.78,9.92,0.869,0.232
+Home_Broadband,Shooter,7475,28.45,39.45,5.29,0.587,0.218
+Home_Broadband,Racing,11500,28.25,39.22,5.37,0.575,0.241
+Mobile_4G,Shooter,10350,46.05,58.53,3.49,0.339,0.224
+Mobile_4G,Racing,8050,45.4,57.71,3.52,0.357,0.261
+CrossRegion_Cloud,Shooter,9775,39.43,53.61,3.65,0.539,0.261
+CrossRegion_Cloud,Racing,12075,40.3,55.21,3.68,0.546,0.287
