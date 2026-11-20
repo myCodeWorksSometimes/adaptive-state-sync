@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .venv/
+real_traces/raw/
+real_traces/loria_dataset.csv

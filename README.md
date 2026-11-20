@@ -42,3 +42,21 @@ All randomness is seeded (seed 42); only the measured inference time depends on 
 - **Ablations:** no update-rate scaling · no compression · no interest management ·
   Reactive (current severity, no predictor) · Oracle (true future severity, upper bound)
 - **Predictor baselines:** persistence (last value), persistence (window mean), majority class
+
+## Extra: validation on real network traces
+
+`real_traces/` reruns the pipeline on real cloud-gaming telemetry (RTT, jitter, loss, link throughput)
+from the LORIA cloud-gaming study (Marchal et al., *JNSM* 2023, <https://cloud-gaming-traces.lhs.loria.fr/>).
+The game-side context (entities, payload, client count) is still synthetic. The raw traces are not
+stored here because the source states no licence; the script downloads them.
+
+```bash
+pip install py7zr                                  # needed to open the .7z archive
+python real_traces/prepare_loria.py                # download + convert -> real_traces/loria_dataset.csv
+python real_traces/real_trace_validation.py        # writes results/real_traces/*.csv
+```
+
+Two experiments: RBF trained on the synthetic split and tested on all 1,647 real sessions, and RBF
+trained and tested on real data split by recording (8 of 25 files held out). On real telemetry,
+last-value persistence predicts the severity class 5 ticks ahead with 98.8% accuracy, while the RBF
+does no better than always predicting class 0.

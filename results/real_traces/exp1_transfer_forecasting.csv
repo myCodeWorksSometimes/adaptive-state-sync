@@ -1,0 +1,5 @@
+model,rtt_mae_ms,rtt_rmse_ms,bw_mae_mbps,bw_rmse_mbps,sev_accuracy,sev_f1_macro
+RBF predictor,45.00409,369.9438,35.21907,56.91008,0.69567,0.33646
+Persistence: last value,1.15908,55.36276,12.75622,24.40884,0.98811,0.95384
+Persistence: window mean,3.48928,85.28436,16.33132,26.80848,0.97647,0.90598
+Majority class (always 0),,,,,0.88517,0.23477

@@ -1,0 +1,6 @@
+comparison,n_sessions,mean_diff_mbps,ci95_lo,ci95_hi,cohens_dz,wilcoxon_p_two_sided
+ASS vs Baseline_A_StaticFullSync,422,0.00298,0.00053,0.00633,0.09586,4.311e-02
+ASS vs Baseline_B_FixedRuleALC,422,-0.8616,-0.92161,-0.80253,-1.37839,1.498e-70
+ASS vs Baseline_C_PredictNoAct,422,0.00089,0.00016,0.00195,0.09584,4.311e-02
+ASS vs Baseline_D_StaticPlacement,422,-0.36786,-0.39263,-0.34236,-1.36323,4.465e-70
+ASS vs ASS_Reactive,422,-0.14661,-0.17492,-0.12017,-0.49439,1.285e-31
